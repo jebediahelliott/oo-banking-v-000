@@ -14,7 +14,7 @@ class Transfer
   end
 
   def execute_transaction
-    if self.sender.valid? 
+    if self.sender.valid?
       binding.pry
       "Transaction rejected. Please check your account balance."
       self.status = "rejected"
